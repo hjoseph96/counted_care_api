@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  account_type: 1
+  account_name: MyString
+  institution_name: MyString
+  plaid_access_token: MyString
+  plaid_account_id: MyString
+  stripe_account_id: MyString
+  access_token: MyString
+  refresh_token: MyString
+  is_active: false
+  last_sync_at: 2025-07-21 16:12:09
+
+two:
+  user: two
+  account_type: 1
+  account_name: MyString
+  institution_name: MyString
+  plaid_access_token: MyString
+  plaid_account_id: MyString
+  stripe_account_id: MyString
+  access_token: MyString
+  refresh_token: MyString
+  is_active: false
+  last_sync_at: 2025-07-21 16:12:09

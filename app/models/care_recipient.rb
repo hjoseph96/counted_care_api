@@ -1,0 +1,2 @@
+class CareRecipient < ApplicationRecord
+end
