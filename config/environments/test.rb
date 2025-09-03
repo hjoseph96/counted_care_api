@@ -20,13 +20,16 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
-  config.cache_store = :null_store
+  config.cache_store = :memory_store, { size: 64.megabytes }
 
   # Render exception templates for rescuable exceptions and raise for other exceptions.
   config.action_dispatch.show_exceptions = :rescuable
 
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
+
+  # Enable sessions for OAuth testing
+  config.session_store :cookie_store, key: '_counted_care_test_session'
 
   # Store uploaded files on the local file system in a temporary directory.
   config.active_storage.service = :test

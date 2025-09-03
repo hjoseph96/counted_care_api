@@ -28,5 +28,12 @@ module CountedCareApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Enable sessions for OAuth flow
+    config.middleware.use ActionDispatch::Session::CookieStore
+    config.middleware.use ActionDispatch::Cookies
+
+    # Add Rack::Attack for rate limiting and anti-DDoS protection
+    config.middleware.use Rack::Attack
   end
 end

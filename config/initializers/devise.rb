@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '5e4888c73bec31d12562440910c49019727c6cb5ff33c1855efac6f770866ece8198abd17afd4203880930dcef24137657ebb82c0d89c96fc1b43454dec9d62d'
+  # config.secret_key = '1446b908ea60313bd429f27f2bb9888f9214341c5df47dd98ce0fdd48ba4e05f4b8a71134a25d108c58c1de13e05be02ab16767d2ac57f2957514452d24df8a0'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '38754609ae02322425d187103633663a48bb324c766a3740fd4810603dcb377749a68a70005bd93bedc0b712bb068fdd0c7aeca5cbc8615493331ac6e4153c94'
+  # config.pepper = '4030251fb9b6597ae91d99c2f4cfba4f7b36f88b32a4473c3fe3c059a9d37811fa2602eb21b5e83fe26d7e7bffcc848b78791aa647932d1c569c147b17cdb215'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -281,6 +281,8 @@ Devise.setup do |config|
   #   manager.intercept_401 = false
   #   manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
+
+
 
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine

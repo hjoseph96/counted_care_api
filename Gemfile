@@ -27,11 +27,21 @@ gem "thruster", require: false
 gem "rack-cors"
 
 gem "devise"
-gem "money-rails"
+  gem "jwt"
+  gem "omniauth"
+  gem "omniauth-google-oauth2"
+  gem "google-id-token"
+  gem "money-rails"
+  gem "http"
+  gem "kaminari"
+gem "rack-attack"
+gem "redis"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
   gem "pry-rails"
+  gem "rspec-rails"
+  gem "factory_bot_rails"
 end
