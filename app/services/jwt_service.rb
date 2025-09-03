@@ -1,5 +1,5 @@
 class JwtService
-  SECRET_KEY = Rails.application.credentials.jwt[:secret]
+  SECRET_KEY = Rails.application.credentials.dig(:jwt, :secret)
   ALGORITHM = 'HS256'
 
   def self.encode(payload)
@@ -27,6 +27,7 @@ class JwtService
 
   def self.user_from_token(token)
     payload = decode(token)
+
     return nil unless payload
     
     User.find_by(id: payload['user_id'])
